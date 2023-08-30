@@ -1,6 +1,9 @@
 import { interval } from 'rxjs';
 import { exhaustMap, tap, take } from 'rxjs/operators';
 
+// https://www.learnrxjs.io/learn-rxjs/operators/transformation/exhaustmap
+// Example 2: Another exhaustMap with interval
+
 const firstInterval = interval(1000).pipe(take(10));
 const secondInterval = interval(1000).pipe(take(2));
 
